@@ -14,5 +14,12 @@ Lanza un contenedor a partir de la imagen creada
 docker run -p <port>:<port> <appname>
 ```
 
-> `port:port` hace mapeo de puertos, ejemplo `3000:3000`, el puerto 3000 del host se conecta al puerto 3000 dentro del contenedor. 
-  
+> `port:port` hace mapeo de puertos, ejemplo `3000:3000`, el puerto 3000 del host se conecta al puerto 3000 dentro del contenedor.
+
+## docker-compose
+
+Crear las imagenes replica definidas en el archivo `docker-composer.yaml`
+
+```bash
+docker-compose up --build -d
+```

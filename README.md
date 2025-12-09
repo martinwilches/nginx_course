@@ -27,6 +27,11 @@ http {
 ### NGINX como Proxy reverse
 
 ```nginx
+upstream backend_server_address {
+    ...
+    ...
+}
+
 server {
     listen 80;
     server_name api.example.com;

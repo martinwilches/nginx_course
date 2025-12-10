@@ -81,12 +81,12 @@ sudo apt install nginx
 ## Redirigir peticiones HTTP a HTTPS
 
 ```nginx
-http {
+server {
     listen 80;
     server_name example.com www.example.com;
 
     # Redireccion
-    return 301 https://$host$request_url;
+    return 301 https://$host$request_uri;
 }
 
 server {

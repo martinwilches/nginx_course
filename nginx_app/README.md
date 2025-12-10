@@ -23,3 +23,13 @@ Crear las imagenes replica definidas en el archivo `docker-composer.yaml`
 ```bash
 docker-compose up --build -d
 ```
+
+## Configuracion HTTPS
+
+1. Obtener un certificado SSL/TLS
+2. Añadir las directivas `ssl_certificate` y `ssl_certificate_key` dentro del contexto `server` en la configuracion de `nginx`.
+3. Reiniciar `nginx`.
+
+```bash
+nginx -s reload
+```
